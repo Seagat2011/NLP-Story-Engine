@@ -1,0 +1,155 @@
+XML
+    file must reside under same directory
+    newline characters are interpreted as empty nodes
+SEQUENCE CHARACTERISTICS
+    a new ability or skill is gained with each sequence 
+        the way each ability is gained is context-sensitive upon sequence-specific details
+    PINCH: confront battle boss (user has 5/10 above skills, boss has 10/10 above skills)
+    sequences concerned with strengthening weapons 
+
+BUG REPORT
+    SYMP: loader is not defined (unable to parse js file)
+        SOLU: correct missing [](){} brackets (scope errors) in sourcefile
+        SOLU: array or object misspelled or not properly defined
+    SYMP: (gobal space) parseErr - mysql_wn_data_synsets_II (library) not defined
+        SOLU: reorder mysql_wn_data_synsets_II.sql.js (library) file before mentor.js (library call)
+
+// story 00 > sequence 00 > reversal 00 > scene 00 > beat 00 > paragraph 00 > sentence 00 > clause 00 > word 00 > connotation (+/- inherit)
+Modules
+    M1 - wikipedia (dictionary, thesaurus, encyclopedia) (story archive)
+    M2 - state-machine library (M1 annotator - story specific)
+    M3 - plot generator (state-machine generation)
+    M4 - beat-sheet (dramatizer tool)
+    M5 - Sentence generator (english grammar tools)
+    
+M1 NOTES    
+M2 NOTES  
+    verbs > direct-address pointer to state-machine physical-address
+    nouns, ponouns > state-machine subject
+    adjectives > state-machine (conditional) flags | attributes
+    adverbs > indirect-address pointer to state-machine physical-address
+    
+M3 NOTES
+    plot-points are satisfied when all req'd nouns + adjs are marked as present
+    
+M4 NOTES
+M5 NOTES    
+  
+well-developed complications imply 
+    less preparation/idle-time   
+    less recovery period
+    more variables not under your control
+    more req'd & coordinated effort
+
+// each state_machine triggers verb TODO flags (triggering adj-search + noun-search, then meeting these req's), which are addressed (up/down) at the next level
+
+TODO   
+    story['anthem'].sequence['the lake of torr'].reversal['ship crash].paragraph['men spot a rock in the distance'].sentence['a party']:big_opening
+    src[ dest[0],..,dest[n] ] each index represens a category    
+    Date().getTime().toString().split(/./gmi) // to get a batch of random numbers (fast)
+
+// wordnet 3.1 toolset
+<!--
+<script src='../wn/mysql-wn-data.synsets_II.sql.js'></script>
+
+<script src='../wn/mysql-wn-data.sense.sql.js'></script>
+
+<script src='../wn/mysql-wn-data.synsets.inverse_II.sql.js'></script>
+<script src='../wn/mysql-wn-data.synsets.attributes_III.js'></script>
+
+<script src='../wn/mysql-wn-data.synsets.sql.js'></script>
+<script src='../wn/mysql-wn-data.sense.sql.js'></script>
+<script src='../wn/mysql-wn-data.sense.inverse.sql.js'></script>
+<script src='../wn/mysql-wn-data.noun.Tops.js'></script>
+<script src='../wn/mysql-wn-data.noun.food.js'></script>
+<script src='../wn/mysql-wn-data.verb.contact.js'></script>
+<script src='../wn/mysql-wn-data.verb.competition.js'></script>
+<script src='../wn/mysql-wn-data.verb.change.js'></script>
+<script src='../wn/mysql-wn-data.verb.consumption.js'></script>
+<script src='../wn/mysql-wn-data.noun.communication.js'></script>
+<script src='../wn/mysql-wn-data.noun.animal.js'></script>
+<script src='../wn/mysql-wn-data.verb.stative.js'></script>
+<script src='../wn/mysql-wn-data.verb.possession.js'></script>
+<script src='../wn/mysql-wn-data.noun.act.js'></script>
+<script src='../wn/mysql-wn-data.verb.motion.js'></script>
+<script src='../wn/mysql-wn-data.noun.time.js'></script>
+<script src='../wn/mysql-wn-data.noun.artifact.js'></script>
+<script src='../wn/mysql-wn-data.noun.substance.js'></script>
+<script src='../wn/mysql-wn-data.verb.communication.js'></script>
+<script src='../wn/mysql-wn-data.noun.plant.js'></script>
+<script src='../wn/mysql-wn-data.noun.group.js'></script>
+<script src='../wn/mysql-wn-data.verb.perception.js'></script>
+<script src='../wn/mysql-wn-data.noun.quantity.js'></script>
+<script src='../wn/mysql-wn-data.noun.attribute.js'></script>
+<script src='../wn/mysql-wn-data.noun.cognition.js'></script>
+<script src='../wn/mysql-wn-data.verb.body.js'></script>
+<script src='../wn/mysql-wn-data.noun.phenomenon.js'></script>
+<script src='../wn/mysql-wn-data.verb.emotion.js'></script>
+<script src='../wn/mysql-wn-data.noun.object.js'></script>
+<script src='../wn/mysql-wn-data.noun.person.js'></script>
+<script src='../wn/mysql-wn-data.verb.social.js'></script>
+<script src='../wn/mysql-wn-data.verb.creation.js'></script>
+<script src='../wn/mysql-wn-data.noun.location.js'></script>
+<script src='../wn/mysql-wn-data.noun.event.js'></script>
+<script src='../wn/mysql-wn-data.noun.possession.js'></script>
+<script src='../wn/mysql-wn-data.noun.shape.js'></script>
+<script src='../wn/mysql-wn-data.noun.state.js'></script>
+<script src='../wn/mysql-wn-data.noun.body.js'></script>
+<script src='../wn/mysql-wn-data.noun.process.js'></script>
+<script src='../wn/mysql-wn-data.noun.feeling.js'></script>
+<script src='../wn/mysql-wn-data.verb.weather.js'></script>
+<script src='../wn/mysql-wn-data.verb.cognition.js'></script>
+<script src='../wn/mysql-wn-data.noun.relation.js'></script>
+<script src='../wn/mysql-wn-data.noun.motive.js'></script>
+<!--
+
+<script src='../wn/mysql-wn-data.verbs.js'></script>
+<script src='../wn/mysql-wn-data.synsets.attributes.js'>
+<script src='../wn/mysql-wn-data.synsets.attributes_II.js'></script>
+<script src='../wn/mysql-wn-data.synsets.inverse.sql.js'></script>
+-->
+
+//
+
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<script>
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","cd_catalog.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+document.write("<table><tr><th>Artist</th><th>Title</th></tr>");
+var x=xmlDoc.getElementsByTagName("CD");
+for (i=0;i<x.length;i++)
+  {
+  document.write("<tr><td>");
+  document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+  document.write("</td></tr>");
+  }
+document.write("</table>");
+</script>
+
+</body>
+</html>

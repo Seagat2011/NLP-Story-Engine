@@ -24,7 +24,7 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
     
 ### VERB TENSORS 
       A VERB TENSOR is a verb that can expanded into
-        a more descriptive sentence
+        a more descriptive CLAUSE
         
         EXAMPLE 
         

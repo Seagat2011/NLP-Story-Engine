@@ -49,7 +49,7 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
         [
             [Julie:excited [stands] at shore:vibrant of lake:people=>occupied:bustling], 
             [Julie:surprised [approaches] water-line:cold:splashes], 
-            [Julie:cold [retreats] for a moment:people=>water:playfull], 
+            [Julie:cold [retreats] for a moment:people=>water:playful], 
             [Julie:recovering [dives] into water:patch=>warm and [swims]],
         ] Goal : Julie swam across the lake, reversal (+), beats: 4, scenes: 1, sequences: 1, story: 1 
         

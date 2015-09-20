@@ -1,5 +1,5 @@
 # NLP-Story-Engine
-Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordNet 3.0 (JavaScript/JSON) to generate 1,000-4,000 page juggernaut novels, and 4,000+ page jarganaut. 
+Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordNet 3.0 (JavaScript/JSON) to generate 1,000-4,000 page juggernaut novels, and 4,000+ page jarganauts. 
 
 ### STORY as an EVENT
       A CLAUSE is a single irreducible EVENT, in general matching 1 of 5 patterns

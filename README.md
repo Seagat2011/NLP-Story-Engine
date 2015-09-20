@@ -1,5 +1,5 @@
 # NLP-Story-Engine
-Natural Language Processing Articficial Intelligence interfaced with Wikipedia (JavaScript/JSON) and WordNet 3.0 (JavaScript/JSON) to generate 1,000-4,000 page juggernaut novels, and 4,000+ page jarganaut. 
+Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordNet 3.0 (JavaScript/JSON) to generate 1,000-4,000 page juggernaut novels, and 4,000+ page jarganaut. 
 
 ### STORY as an EVENT
       A CLAUSE is a single irreducible EVENT, in general matching 1 of 5 patterns
@@ -18,6 +18,7 @@ Natural Language Processing Articficial Intelligence interfaced with Wikipedia (
       SCENES are composed of 1+ ACTIONS
       SEQUENCES are composed of 1+ SCENES
         Each SEQUENCE undergoes a REVERSAL of emotion for the characters
+        (met through word-connotation search, attribute-tagging)
       STORY is composed of 1+ SEQUENCES
       Each are composed of 1+ sentences, and sentences are composed of VERB TENSORS
     
@@ -33,9 +34,24 @@ Natural Language Processing Articficial Intelligence interfaced with Wikipedia (
         
         EXPANDING BEATS THROUGH VERB TENSOR EXPANSION 
         
-        [how jack washes the dish] 
-        [how Alex eats the sandwish]
-        [how Julie swims across the lake] 
+        [
+            [Jack:tired [stands] at sink:dry with dish:dirty], 
+            [Jack:surprised [turns on] water:cold:splashes], 
+            [Jack:drying [adds] detergent:sudy], 
+            [Jacks:recovering [applies] water:warm and [applies] detergent:sudsy to dish:clean],
+        ] Goal : Jack washes the dish, reversal (+), beats: 4, scenes: 1, sequences: 1, story: 1
+        [
+            [Alex:seated [raises] bread:wheat sandwich:intact to face], 
+            [Alex:stands [notices] mold:fresh on bread:smelly sandwich:separating], 
+            [Alex:seated [removes] bread:wheat, [tossing] into trash], 
+            [Alex:recovering [applies] bread:white sandwich:fresh to dish:clean],
+        ] Goal : Alex ate the sandwich, reversal (-), beats: 4, scenes: 1, sequences: 1, story: 1
+        [
+            [Julie:excited [stands] at shore:vibrant of lake:people=>occupied:bustling], 
+            [Julie:surprised [approaches] water-line:cold:splashes], 
+            [Julie:cold [retreats] for a moment:people=>water:playfull], 
+            [Julie:recovering [dives] into water:patch=>warm and [swims]],
+        ] Goal : Julie swam across the lake, reversal (+), beats: 4, scenes: 1, sequences: 1, story: 1 
         
       This NLP Story engine takes an EVENT (eg a clause), comprised of a single BEAT
         and expands the EVENT, and BEATS therein, in a balanced way, using VERB TENSOR EXPANSION, 

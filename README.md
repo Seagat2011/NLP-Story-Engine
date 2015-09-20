@@ -37,7 +37,7 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
         [
             [Jack:tired [stands] at sink:dry with dish:dirty], 
             [Jack:surprised [turns on] water:cold:splashes], 
-            [Jack:drying [adds] detergent:sudy], 
+            [Jack:drying [adds] detergent:sudsy], 
             [Jacks:recovering [applies] water:warm and [applies] detergent:sudsy to dish:clean],
         ] Goal : Jack washes the dish, reversal (+), beats: 4, scenes: 1, sequences: 1, story: 1
         [

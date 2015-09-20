@@ -27,7 +27,7 @@ Natural Language Processing Articficial Intelligence interfaced with Wikipedia (
         
         EXAMPLE 
         
-        Jack [washes] the dish      / 1 beat 
+        Jack [washes] the dish        / 1 beat 
         Alex [ate] the sandwich       / 1 beat 
         Julie [swam] across the lake  / 1 beat 
         
@@ -38,7 +38,7 @@ Natural Language Processing Articficial Intelligence interfaced with Wikipedia (
         [how Julie swims across the lake] 
         
       This NLP Story engine takes an EVENT (eg a clause), comprised of a single BEAT
-        and expands the EVENT, and its BEATS therein, in a balanced way, through expanding VERB TENSORS, 
+        and expands the EVENT, and BEATS therein, in a balanced way, using VERB TENSOR EXPANSION, 
         until the BEATS create a STORY EVENT of desired length 
         
       An NLP Story engine exploits the expansion of VERB TENSORS

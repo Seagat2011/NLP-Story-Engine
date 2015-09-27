@@ -5,9 +5,9 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
       A CLAUSE is a single irreducible EVENT, in general matching 1 of 5 patterns
         1. SUBJECT+VERB (eg [John] [walks])
         2. SUBJECT+VERB+OBJECT (eg [mice] [frighten] [elephants])
-        3. SUBJECT+VERB+DIRECT OBJECT+INDIRECT OBJECT (eg [jan] [showed] [carl] the [book])
-        4. SUBJECT+LINKING VERB+SUBJECT COMPLEMENT (eg the [fence] [was] [white])
-        5. SUBJECT+VERB+DIRECT OBJECT (eg [I] [painted] the [fence] white)
+        3. SUBJECT+VERB+DIRECT_OBJECT+INDIRECT_OBJECT (eg [jan] [showed] [carl] the [book])
+        4. SUBJECT+LINKING_VERB+SUBJECT_COMPLEMENT (eg the [fence] [was] [white])
+        5. SUBJECT+VERB+DIRECT_OBJECT (eg [I] [painted] the [fence] white)
       Any BEAT, ACTION, SCENE, or SEQUENCE in a STORY is also considered an EVENT
       A BEAT is a single irreducible EVENT 
         The overall state of ENTROPY during A BEAT never remains unchanged 

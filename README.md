@@ -23,8 +23,7 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
       All are composed of 1+ sentences, and sentences are composed of VERB TENSORS
     
 ### VERB TENSORS 
-      A VERB TENSOR is a verb that can expanded into
-        a more descriptive CLAUSE
+      A VERB TENSOR is a verb that can expanded into a more descriptive CLAUSE
         
         EXAMPLE 
         

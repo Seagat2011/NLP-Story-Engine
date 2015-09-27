@@ -20,7 +20,7 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
         Each SEQUENCE undergoes a REVERSAL of emotion for the characters
         (met through word-connotation search, attribute-tagging)
       STORY is composed of 1+ SEQUENCES
-      Each is composed of 1+ sentences, and sentences are composed of VERB TENSORS
+      All are composed of 1+ sentences, and sentences are composed of VERB TENSORS
     
 ### VERB TENSORS 
       A VERB TENSOR is a verb that can expanded into

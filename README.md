@@ -56,7 +56,7 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
         and expands the EVENT, and BEATS therein, in a balanced way, using VERB TENSOR EXPANSION, 
         until the BEATS create a STORY EVENT of desired length 
         
-      An NLP Story engine exploits the use of VERB TENSOR expansion
+      An NLP Story engine exploits the use of VERB TENSOR EXPANSION
       
       The reverse can also be used to create a summarization tool
 

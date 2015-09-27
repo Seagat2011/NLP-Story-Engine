@@ -8,7 +8,7 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
         3. SUBJECT+VERB+DIRECT_OBJECT+INDIRECT_OBJECT (eg [jan] [showed] [carl] the [book])
         4. SUBJECT+LINKING_VERB+SUBJECT_COMPLEMENT (eg the [fence] [was] [white])
         5. SUBJECT+VERB+DIRECT_OBJECT (eg [I] [painted] the [fence] white)
-      Any BEAT, ACTION, SCENE, or SEQUENCE in a STORY is also considered an EVENT
+      Any BEAT, ACTION, SCENE, or SEQUENCE in a STORY is considered an EVENT
       A BEAT is a single irreducible EVENT 
         The overall state of ENTROPY during A BEAT never remains unchanged 
       A CLAUSE is equal to 1 BEAT

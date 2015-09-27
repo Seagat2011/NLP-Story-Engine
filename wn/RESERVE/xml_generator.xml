@@ -1,0 +1,51 @@
+function loader() {
+    srcCode.value = 'story=0 sequence_blocks=4 iterative_depth=2 paragraphs=2 sentences=13 season=0 weapon=0 realization=(+) story_state_machine=[]'
+    return
+}
+// function loader ()
+
+function clear_window() {
+    srcTranslated.value = ''
+    return
+}
+// clear_window ()
+
+function MD5() {
+    srcTranslated.value = Math.md5(srcCode.value)
+    return
+}
+// generate_MD5 ()
+
+function translatorTool() {
+    var SYNSETS = '<?xml version="1.0" encoding="UTF-8"?> \n\
+        <!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">\n \
+        <SYNSETS>' 
+    var SYNSETSc = '</SYNSETS>'
+    var ENTRY = '<ENTRY>'
+    var ENTRYc = '</ENTRY>'
+    var WORD = '<WORD>'
+    var WORDc = '</WORD>'
+    var DEFINITION = '<DEFINITION KEY="%1%" PART_OF_SPEECH="%2%" OTHER="%3%">'
+    var DEFINITIONc = '</DEFINITION>'
+    var result = []
+    result.push(SYNSETS)
+    for(var word in mysql_wn_data_synsets_II){
+        var N = mysql_wn_data_synsets_II[word].length
+        result.push(ENTRY)
+        result.push(WORD)
+        result.push(word)
+        result.push(WORDc)
+        for(var i=0; i<N; i++){
+            result.push(DEFINITION
+                .replace(/%1%/,mysql_wn_data_synsets_II[word][i][0])
+                .replace(/%2%/,mysql_wn_data_synsets_II[word][i][1])
+                .replace(/%3%/,mysql_wn_data_synsets_II[word][i][2]) )
+            result.push(mysql_wn_data_synsets_II[word][i][3])
+            result.push(DEFINITIONc)
+        }    
+        result.push(ENTRYc)
+    }
+    result.push(SYNSETSc)
+    srcTranslated.value = result.join('\n')
+}
+// translatorTool ()

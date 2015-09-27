@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" hasBrowserHandlers="true">
+<head>
+<title>research engine 1.0.0.0</title>
+<meta charset="utf-8">
+<link rel='stylesheet' media='all' href=intf.css>
+<script src=intf.js></script>
+</head>
+<body onload='loader()'>
+<textarea class=cssCode id=srcCode placeholder='Enter keyword then press translate button below to translate'></textarea><p/>
+<input id=btnTranslate type=button value='click to translate' onclick='translatorTool()'/>
+<input id=btnTranslate type=button value='clear source window' onclick='clear_window()'/>
+<select id=selBox>
+<option index=0 default>  defs  </option>
+<option index=5>  idefs  </option>
+<option index=1>  hypernym  </option>
+<option index=2>  hyponym  </option>
+<option index=3>  instance hypernym  </option>
+<option index=4>  instance hyponym  </option>
+<option index=11>  part holonym  </option>
+<option index=12>  part meronym  </option>
+<option index=13>  member holonym  </option>
+<option index=14>  member meronym  </option>
+<option index=15>  substance holonym  </option>
+<option index=16>  substance meronym  </option>
+<option index=21>  entail  </option>
+<option index=23>  cause  </option>
+<option index=30>  antonym  </option>
+<option index=40>  similar / synonym  </option>
+<option index=50>  also  </option>
+<option index=60>  attribute  </option>
+<option index=70>  verb group  </option>
+<option index=71>  participle  </option>
+<option index=80>  pertainym  </option>
+<option index=81>  derivation  </option>
+<option index=91>  domain category  </option>
+<option index=92>  domain member category  </option>
+<option index=93>  domain region  </option>
+<option index=94>  domain member region  </option>
+<option index=95>  domain usage  </option>
+<option index=96>  domain member usage  </option>
+<option index=97>  domain  </option>
+<option index=98>  member  </option>
+<option> example sentence </option>
+<option> attribute flags </option>
+<option> Wiki Article </option>
+<option> Spelling (WordNet 3.1) </option>
+<option> Wiki Topics </option>
+</select><p/>
+<textarea class=cssTranslated id=srcTranslated placeholder='Author - Abdul H. Shabazz, Copyright (c) 2015 - All Rights Reserved'></textarea>
+</body>
+</html>

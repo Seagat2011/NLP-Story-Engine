@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml" hasBrowserHandlers="true">
+<head>
+<meta charset="utf-8">
+<link rel='stylesheet' media='all' href='sql-generator-helper.css'>
+<script src='sql-generator-helper.js'></script>
+<script src='../mysql-wn-data.synsets.sql.js'></script>
+<script src='../mysql-wn-data.sense.inverse.sql.js'></script>
+<!--
+<script src='../mysql-wn-data.sense.sql.js'></script>
+<script src='../mysql-wn-data.semlinks.sql.js'></script>
+<script src='../mysql-wn-data.synsets.inverse.sql.js'></script>
+-->
+</head>
+<body onload='loader()'>
+<textarea class=cssCode id=srcCode placeholder='Paste source to be translated'></textarea><p/>
+<input id=btnTranslate type=button value='click to translate' onclick='translatorTool()'/>
+<input id=btnTranslate type=button value='clear source window' onclick='clear_window()'/><p/>
+<textarea class=cssTranslated id=srcTranslated placeholder='Press translate button above to translate from source'></textarea>
+</body>
+</html>

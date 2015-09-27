@@ -1,0 +1,137 @@
+
+------------------------------------------------------------------------
+
+
+    The XML DOM - Advanced
+
+In an earlier chapter of this tutorial <xml_dom.asp> we introduced the
+XML DOM, and we used the getElementsByTagName() method to retrieve data
+from an XML document.
+
+In this chapter we will explain some other important XML DOM methods.
+
+You can learn more about the XML DOM in our XML DOM tutorial
+</dom/default.asp>.
+
+------------------------------------------------------------------------
+
+
+    Get the Value of an Element
+
+The XML file used in the examples below: books.xml.
+
+The following example retrieves the text value of the first <title> element:
+
+
+    Example
+
+txt=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+Try it yourself » <tryit.asp?filename=tryxml_dom_getelement>
+------------------------------------------------------------------------
+
+
+    Get the Value of an Attribute
+
+The following example retrieves the text value of the "lang" attribute
+of the first <title> element:
+
+
+    Example
+
+txt=xmlDoc.getElementsByTagName("title")[0].getAttribute("lang");
+
+Try it yourself » <tryit.asp?filename=tryxml_dom_getattribute>
+------------------------------------------------------------------------
+
+
+    Change the Value of an Element
+
+The following example changes the text value of the first <title> element:
+
+
+    Example
+
+x=xmlDoc.getElementsByTagName("title")[0].childNodes[0];
+x.nodeValue="Easy Cooking";
+
+Try it yourself » <tryit.asp?filename=tryxml_dom_changeelement>
+------------------------------------------------------------------------
+
+
+    Create a New Attribute
+
+The XML DOM setAttribute() method can be used to change the value of an
+existing attribute, or to create a new attribute.
+
+The following example adds a new attribute (edition="first") to each
+<book> element:
+
+
+    Example
+
+x=xmlDoc.getElementsByTagName("book");
+
+for(i=0;i<x.length;i++)
+  {
+  x[i].setAttribute("edition","first");
+  }
+
+Try it yourself » <tryit.asp?filename=tryxml_dom_addattribute>
+------------------------------------------------------------------------
+
+
+    Create an Element
+
+The XML DOM createElement() method creates a new element node.
+
+The XML DOM createTextNode() method creates a new text node.
+
+The XML DOM appendChild() method adds a child node to a node (after the
+last child).
+
+To create a new element with text content, it is necessary to both
+create a new element node and a new text node, and then append it to an
+existing node.
+
+The following example creates a new element (<edition>), with the
+following text: First, and adds it to the first <book> element:
+
+
+    Example
+
+newel=xmlDoc.createElement("edition");
+newtext=xmlDoc.createTextNode("First");
+newel.appendChild(newtext);
+
+x=xmlDoc.getElementsByTagName("book");
+x[0].appendChild(newel);
+
+Try it yourself » <tryit.asp?filename=tryxml_dom_createelement>
+
+Example explained:
+
+  * Create an <edition> element
+  * Create a text node with the following text: First
+  * Append the text node to the new <edition> element
+  * Append the <edition> element to the first <book> element
+
+------------------------------------------------------------------------
+
+
+    Remove an Element
+
+The following example removes the first node in the first <book> element:
+
+
+    Example
+
+x=xmlDoc.getElementsByTagName("book")[0];
+x.removeChild(x.childNodes[0]);
+
+Try it yourself » <tryit.asp?filename=tryxml_dom_removeelement>
+
+*Note:* The result of the example above may be different depending on
+what browser you use. Firefox treats new lines as empty text nodes,
+Internet Explorer does not. You can read more about this and how to
+avoid it in our XML DOM tutorial </dom/default.asp>.

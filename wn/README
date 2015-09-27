@@ -1,0 +1,13 @@
+BUGFIXES
+    SYMP: loading WorkerThreads - err: The operation is insecure
+        SOLU: check filenames spellings
+        SOLU: check files absent or missing
+    
+    SYMP: WorkerThread.postMessage cant reach target script
+        SOLU: use Worker.terminate (due to eventListener 20 thread-count maximum)        
+        SOLU: BROWSER SETTINGS (about:config)
+            dom.workers.enabled:true
+            dom.workers.maxPerDomain:1000
+        SOLU: use Worker.addEventListener / Worker.removeEventistener to manage resources
+        SOLU: use 1 thread per op instead of 1 per file (ie merge files)
+    

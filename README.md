@@ -2,7 +2,7 @@
 Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordNet 3.0 (JavaScript/JSON) to generate 1,000-4,000 page juggernaut novels, and 4,000+ page jarganauts. 
 
 ### STORY as an EVENT
-      A CLAUSE is a single irreducible EVENT, in general matching 1 of 5 patterns
+      A CLAUSE is a single irreducible EVENT, matching 1 of 5 patterns
         1. SUBJECT+VERB (eg [John] [walks])
         2. SUBJECT+VERB+OBJECT (eg [mice] [frighten] [elephants])
         3. SUBJECT+VERB+DIRECT_OBJECT+INDIRECT_OBJECT (eg [jan] [showed] [carl] the [book])

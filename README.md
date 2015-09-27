@@ -74,5 +74,5 @@ Natural Language Processor interfaced with Wikipedia (JavaScript/JSON) and WordN
       mentor.css  - CSS3 / styles
       mentor.htm  - HTML5 / interface
       mentor.js   - javascript / driver
-      README      - gen description
+      README      - description
       GNU LICENSE - license of user's distribution / ownership rights

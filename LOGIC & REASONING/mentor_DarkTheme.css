@@ -1,0 +1,372 @@
+body,input,select,.cssCode,.cssTranslated {
+    background-color:rgba(0%,0%,0%,1);
+    color:#FCFCFC;
+}
+select,input,.cssCode,.cssTranslated {
+    align-content: stretch;
+    align-items: stretch;
+    align-self: stretch;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0s;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+    animation-name: none;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    backface-visibility: visible;
+    background-attachment: scroll;
+    background-blend-mode: normal;
+    background-clip: border-box;
+    background-color: #121212;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: #121212;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: inset;
+    border-bottom-width: 1px;
+    border-collapse: separate;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #121212;
+    border-left-style: inset;
+    border-left-width: 1px;
+    border-right-color: #121212;
+    border-right-style: inset;
+    border-right-width: 1px;
+    border-spacing: 0px 0px;
+    border-top-color: #121212;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: inset;
+    border-top-width: 1px;
+    bottom: auto;
+    box-decoration-break: slice;
+    box-shadow: none;
+    box-sizing: border-box;
+    caption-sidetopclear: none;
+    clip: auto;
+    clip-path: none;
+    clip-rule: nonzero;
+    color: #bebebe;
+    color-interpolation: srgb;
+    color-interpolation-filters: linearrgb;
+    content: none;
+    counter-increment: none;
+    counter-reset: none;
+    direction: ltr;
+    display: inline;
+    dominant-baseline: auto;
+    empty-cells: show;
+    fill: #000;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    filter: none;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    float: none;
+    flood-color: #000;
+    flood-opacity: 1;
+    font-family: "liberation mono";
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-weight: 400;
+    image-orientation: 0deg;
+    image-rendering: auto;
+    ime-mode: auto;
+    isolation: auto;
+    justify-content: flex-start;
+    left: auto;
+    letter-spacing: normal;
+    lighting-color: #FFF;
+    line-height: 14px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-bottom: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1px;
+    marker-end: none;
+    marker-mid: none;
+    marker-offset: auto;
+    marker-start: none;
+    mask: none;
+    mask-type: luminance;
+    max-height: none;
+    max-width: none;
+    min-height: 0px;
+    min-width: 0px;
+    mix-blend-mode: normal;
+    object-fitfillobject-position: 50% 50%;
+    opacity: 1;
+    order: 0;
+    outline-color: #000;
+    outline-offset: 0px;
+    outline-style: none;
+    outline-width: 0px;
+    overflow: auto;
+    overflow-wrap:nobreak;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 5px;
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: auto;
+    paint-order: normal;
+    perspective: none;
+    perspective-origin: 786px 138.6px;
+    pointer-events: auto;
+    position: static;
+    quotes: """ """ "'" "'";
+    right: auto;
+    ruby-align: space-around;
+    ruby-position: over;
+    scroll-behavior: auto;
+    shape-rendering: auto;
+    stop-color: #000;
+    stop-opacity: 1;
+    stroke: none;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-opacity: 1;
+    stroke-width: 1px;
+    table-layout: auto;
+    text-align: start;
+    text-anchor: start;
+    text-decoration: none;
+    text-decoration-color: #FCFCFC;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-indent: 0px;
+    text-overflowcliptext-rendering: optimizelegibility;
+    text-shadow: none;
+    text-transform: none;
+    top: auto;
+    transform: none;
+    transform-origin: 786px 138.6px;
+    transform-style: flat;
+    transition-delay: 0s;
+    transition-duration: 0s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    unicode-bidi: normal;
+    vector-effect: none;
+    vertical-align: text-bottom;
+    visibility: visible;
+    white-space: pre-wrap;
+    will-change: auto;
+    word-break: normal;
+    word-spacing: 0px;
+    word-wrap: break-word;
+    z-index: auto;
+}
+.cssCode {
+    width:100%;
+    height:35%;
+    font-family:'liberation mono';
+    font-size:12px;
+}
+.cssTranslated {
+    width:100%;
+    height:16%;
+    font-family:'liberation mono';
+    font-size:12px;
+}
+.cssTABLE {
+    font-style:italic;
+    /*font-weight:bold;*/
+}
+.cssWindow {
+    font-size:10; 
+    padding-left:30px; 
+    font-family:'liberation serif';
+}
+.cssPOS {
+    font-size:12; 
+}
+.cssSUP {
+    font-size:12; 
+    padding-bottom:0px;
+    padding-top:0px;
+    /*text-align:top;*/
+}
+.cssMATRIX {
+    font-family:'liberation serif';
+}
+.cssUBOUNDS {
+    font-size:12; 
+    padding-bottom:0px;
+    padding-top:0px;
+    text-align:center;
+}
+.cssLBOUNDS {
+    font-size:12;
+    padding-bottom:0px;
+    padding-top:0px;
+    text-align:center;
+}
+.cssWindowTitle {
+    font-size:45;
+}
+.cssFormula {
+    font-size:21;
+    text-align:center;
+}
+.cssFormulaFont {
+    font-family:'liberation serif';
+}
+.cssFormulaTable {
+    width:100%;
+    height:35%;
+    overflow:auto;
+    /*
+    overflow-x:scroll;
+    overflow-y:scroll;
+    */
+}
+.cssGNU {
+    font-family:liberation serif;
+    font-size:14px;
+    display:none;
+    height:92%;
+    width:100%;
+    overflow:scroll;
+}
+.cssHELP {
+    font-family:liberation sans;
+    font-size:14px;
+    display:none;
+    height:92%;
+    width:100%;
+    overflow:scroll;
+}
+.cssFormulaOperator {
+    font-size:48;
+    padding-top:0px;
+    padding-bottom:10px;
+    float:left;
+}
+.cssLINE {
+    font-size:12; 
+    padding-bottom:0px;
+    padding-top:0px;
+    padding-left:64px;
+}
+.cssGIVEN {
+    font-size:21;
+    font-family:'liberation serif';
+    padding-left:21px;
+}
+.cssCYAN {
+    color:cyan; /* 00FFFF */
+}
+.cssMAGENTA {
+    color:magenta; /*#FF00FF;*/
+}
+.cssYELLOW {
+    color:yellow; /*#FFFF00;*/
+}
+.cssRED {
+    color:red; /*#FF0000;*/
+}
+.cssGREEN {
+    color:green; /*#00FF00;*/
+}
+.cssBLUE {
+    color:blue; /*#0000FF;*/
+}
+.cssBLACK {
+    color:black; /*#000000;*/
+}
+#cssCOVER {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0%,0%,0%,0.75);
+    z-index:1001;
+    display:none;
+}
+#cssMENU {
+    top:15%;
+    left:32%;
+    width:40%;
+    height:75%;
+    margin:0 auto;
+    position:fixed;
+    z-index:1002;
+    display:none;
+    border:1.5px solid #4e4e4e;
+    border-radius:16px;
+    background-color:rgba(0%,0%,0%,1);
+    color:white;
+    font-family:liberation serif;
+    font-size:14px;
+}
+#cssMENU:target,#cssMENU:target + #cssCOVER {
+    display:block;
+}
+.cssCANCEL {
+    display:block;
+    position:absolute;
+    top:3px;
+    right:2px;
+    color:#4e4e4e;
+    height:30px;
+    width:35px;
+    font-size:16px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+}
+.cssFRAME {
+    padding:25px;
+}
+.cssCONTENT {
+    display:none;
+    height:92%;
+    width:100%;
+    overflow:scroll;
+}
+.cssMENU_LABEL {
+    color: #2e2e2e;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.cssMENU_LABEL:hover {
+    text-decoration: underline;
+}
+.cssMENU_LABEL:visited {
+    color: #2e2e2e;
+}

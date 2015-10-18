@@ -1,0 +1,199 @@
+
+BUGFIXES
+    SYMP: parameter-list undefined
+        SOLU: verify target-file in Worker.addEventListener
+        SOLU: verify Worker.postMessage parameter-list
+        
+BROWSER SETTINGS - MOZILLA (about:config)
+    dom.workers.enabled:true
+    dom.workers.maxPerDomain:1000
+
+LOGIC
+    if A = (A) then
+        !A = -(A)
+    if A = B u C then
+        !A = -(B u C)
+    if A = B n C then
+        !A = -(B n C)
+        
+Clausal Inference-Rule Calculus 
+      
+    GENERATIVE INFERENCE RULES (can add to clauses)
+    
+        EQUALITY RESOLUTION (ER)
+            x=/=a u x=x > a=a
+
+        SUPERPOSITION into NEGATIVE literals (SN)
+            00{lhs=/=rhs},01{lhs=/=rhs},
+            00{lhs,rhs} =/= 01{lhs,rhs}
+
+        SUPERPOSITION into POSITIVE literals (SP)
+            00{lhs==rhs},01{lhs==rhs},
+            00{lhs,rhs} == 01{lhs,rhs}  <==>  00:01(l1=l2 & r1=r2) v 01:00(l1=r2 & r1=l2)
+
+        SIMULTANEOUS SN (SSN)
+
+        SIMULTANEOUS SP (SSP)
+
+    CONTRACTIVE INFERENCE RULES (are backsubstituted)
+    
+        EQUALITY FACTORING (EF)
+            x=a u b=c u x=d > a!=c u b=c u b!=d 
+
+        REWRITE NEGATIVE literals (RN)
+
+        REWRITE POSITIVE literals (RP)
+
+        CLAUSE SUBSUMPTION (CS)
+            (0+0) > (0)
+
+        EQUALITY SUBSUMPTION (ES)
+
+        POSITIVE SIMPLIFY-REFLECT (PS)
+
+        NEGATIVE SIMPLIFY-REFLECT (NS)  
+            C v L     C' v -L v R 
+            ---------------------   if s(C v L) = C' v L for some subst. s
+                C' v R
+
+        TAUTOLOGY DELETION (TD)
+            (a+b)+0 > (a+b)
+
+        DELETION of DUPLICATE literals (DD)
+
+        DELETION of RESOLVED literals (DR)
+
+        DESTRUCTIVE EQUALITY RESOLUTION (DE)
+
+        CONTEXTUAL LITERAL CUTTING (CLC)
+
+        CONDENSE (COND)
+            a*a*a*a > a^4
+
+        INTRODUCE DEFINITION (ID)
+
+        APPLY DEFINITION (AD)
+
+REASONING STRATEGY
+    It can be effective to reduce clauses to a set of min terms before generating inferences
+    U = unprocessed clauses
+    P = processed clauses
+    c = clause under examination
+    simplify(clause,with_respect_to)
+    axioms are given a priority (least # terms) and weight (greatest instance of non-determinism)
+    axioms are mapped to a Natural Language grammar to assure effective informational classification
+        and retrieval
+    Euclid considers the following
+        Are all negative clauses unit clauses?
+        Are all literals equality literals, are some literas equality literals, or is the problem non-equational?
+        Are there only a few, some, or many positive non-ground unit clauses among the axioms?
+        Are all goals (negative clauses) ground?
+        Are there a few, some, or many 
+            clauses in the problem?
+            literals?
+            (sub)terms?
+            positive ground unit clauses amongst the axioms?
+        Is the maximum arity of any function symbol 0, 1, 2, or greater? 
+    Euclid does the following
+        The problem is parsed and converted into a set of clauses and formulas by
+        a simple but efficient recursive descent parser. The parser supports E-LOP,
+        and the TPTP CNF/FOF syntax [13].
+        
+        In the next stage, Relevancy Pruning, the problem is optionally simpliffied by
+        discarding clauses and formulas deemed unlikely to contribute to a proof. E
+        implements both strict relevancy pruning and a conffigurable variant of the
+        SInE algorithm [4].
+        
+        The third stage, Clausification, converts the problem from full first-order
+        logic to clausal form. Clausification uses a slightly simplified version of the
+        algorithm presented by Nonnengart and Weidenbach [8]. The implementa-
+        tion takes advantage of E's shared term/shared formula representation
+        
+        The resulting clause set can be pre-processed. Preprocessing removes redun-
+        dant literals and tautologies, and optionally expands equational definitions.
+        If requested, preprocessing can also perform complete interreduction of the
+        problem specification.
+        
+        After preprocessing, the clause set is passed to the main saturation algo-
+        rithm. This is realized as an instance of the DISCOUNT variant of the
+        given-clause algorithm and implements a variant of the superposition cal-
+        culus with a number of contraction techniques. The saturation ends when
+        the empty clause has been derived, the set is saturated, or a user-defined
+        resource limit is reached.
+
+        The prover can store enough information to generate a checkable proof ob-
+        ject. In the final (optional) step, this information is collected into a proof
+        tree (or saturation derivation), which can be printed in E's original PCL-2
+        or TPTP-3/TSTP syntax      
+
+Euclid Algorithm (Proof Procedure)
+    # U < axioms , P == null
+    while U != {} begin
+        c < U.select.axiom
+        U < U \ {c}
+        # Apply (RN) (RP) (NS) (PS) (CLC) (DR) (DD) (DE)
+        simplify(c,P)
+        # Apply (CS) (ES) (TD)
+        if c is implied by P then
+            # delete or ignore c
+        else if c is {} then
+            # success!
+            end program
+        else
+            T < {} # temporary clause
+            foreach p in P do
+                if p can be simplified with c
+                    P < P \ {p}
+                    U < U \ { d|d is direct descendant of p } 
+                    T < T u {p}
+                fi
+            end
+            P < P u {c}
+            T < T u e-resolvents(c) # (ER)
+            T < T u e-factors(c) # (EF)
+            T < T u paramdoulants(c,P) # (SN) (SP)
+            foreach p in T do
+                # Apply efficiently implemented subset of (RN)
+                # (RP) (NS) (PS) (CLC) (DR) (DD) (DE)
+                P < cheap_simplify(p,P)
+                # Apply (TD) or efficient approx of
+                if p is trivial
+                    # delete or ignore p
+                else
+                    U < U u cheap_simplify(p,P)
+                fi
+            end
+        fi # test trivial(c)
+    end # loop U
+    # failure: U is satisfiable; P describes model
+
+EUCLID SOLVES
+    I have 5 dogs                   # I:dogs:5
+    3 dogs are sick                 # dogs:sick:3 >> dogs:!sick:-3
+    how many dogs are not sick ?    # HOW MANY: foreach dog_found=match(/dogs:/) in {} result += dog_found.match(dogs[:*]*:\d+) end 
+    
+    I am an engineer        # I:an engineer
+    Paul is an engineer     # Paul:an engineer
+    who is an engineer ?    # WHO: foreach name=match(/:an engineer/) in {} do result.push(name.lhs.subject) end
+    
+    an engineer is an individual whom applies the discipline of math and science in his daily work # engineer:an individual:applies:discipline:math and science:to daily work
+    what is an engineer ?   # WHAT: foreach name=match(/an engineer:/) in {} do result.push(name.rhs.predicate) end
+    Iff 'What is' cannot be answered then Euclid performs a DICTIONARY lookup
+    
+    [noun.fruit|apple] > [apple|apple] // [def|pretty text]
+ 
+NOTES
+    Summarization of documents is done at the verb level: (eg I [ate] >> I went to the kitchen and [made] a sandwhich)
+    Euclid will learn how to locate an answer within sentences mapped to multiple Natural Language Grammars
+    AC Tautology Deletion - Assoc / Commutative Tautology Deletion
+    Cover Art: B/W image of Bertrand Russell
+    lhs=rhs substution techniques I have termed "Bipolar/Inference rule (Superpositional) calculus". Statements are ontologically mapped onto RegularExpressions (Fantastic search performance!)
+    
+FEATURES
+    Euclid will have archive capability to remember what it learns
+    Euclid can surmise an answer (iff missing information) by imagining a correct grammar and so then can ask 
+        the user a question in a way that supplies the missing grammar
+    An HTML5 canvas element will be incorporated for Euclid to parse mathematical equations as well as formulaic markup ( using LibreOffice Math syntax)
+    
+THEORY
+    Perhaps Euclid can use ontology mapping onto RegularExpressions to verify & solve proofs (automated prover)

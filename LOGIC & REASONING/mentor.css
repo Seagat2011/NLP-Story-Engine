@@ -1,0 +1,183 @@
+
+.cssCode {
+    width:100%;
+    height:35%;
+    font-family:'liberation mono';
+    font-size:12px;
+}
+.cssTranslated {
+    width:100%;
+    height:16%;
+    font-family:'liberation mono';
+    font-size:12px;
+}
+.cssTABLE {
+    font-style:italic;
+    /*font-weight:bold;*/
+}
+.cssWindow {
+    font-size:10; 
+    padding-left:30px; 
+    font-family:'liberation serif';
+}
+.cssPOS {
+    font-size:12; 
+}
+.cssSUP {
+    font-size:12; 
+    padding-bottom:0px;
+    padding-top:0px;
+    /*text-align:top;*/
+}
+.cssMATRIX {
+    font-family:'liberation serif';
+}
+.cssUBOUNDS {
+    font-size:12; 
+    padding-bottom:0px;
+    padding-top:0px;
+    text-align:center;
+}
+.cssLBOUNDS {
+    font-size:12;
+    padding-bottom:0px;
+    padding-top:0px;
+    text-align:center;
+}
+.cssWindowTitle {
+    font-size:45;
+}
+.cssFormula {
+    font-size:21;
+    text-align:center;
+}
+.cssFormulaFont {
+    font-family:'liberation serif';
+}
+.cssFormulaTable {
+    width:100%;
+    height:35%;
+    overflow:auto;
+    /*
+    overflow-x:scroll;
+    overflow-y:scroll;
+    */
+}
+.cssGNU {
+    font-family:liberation serif;
+    font-size:14px;
+    display:none;
+    height:92%;
+    width:100%;
+    overflow:scroll;
+}
+.cssHELP {
+    font-family:liberation sans;
+    font-size:14px;
+    display:none;
+    height:92%;
+    width:100%;
+    overflow:scroll;
+}
+.cssFormulaOperator {
+    font-size:48;
+    padding-top:0px;
+    padding-bottom:10px;
+    float:left;
+}
+.cssLINE {
+    font-size:12; 
+    padding-bottom:0px;
+    padding-top:0px;
+    padding-left:64px;
+}
+.cssGIVEN {
+    font-size:21;
+    font-family:'liberation serif';
+    padding-left:21px;
+}
+.cssCYAN {
+    color:cyan; /* 00FFFF */
+}
+.cssMAGENTA {
+    color:magenta; /*#FF00FF;*/
+}
+.cssYELLOW {
+    color:yellow; /*#FFFF00;*/
+}
+.cssRED {
+    color:red; /*#FF0000;*/
+}
+.cssGREEN {
+    color:green; /*#00FF00;*/
+}
+.cssBLUE {
+    color:blue; /*#0000FF;*/
+}
+.cssBLACK {
+    color:black; /*#000000;*/
+}
+#cssCOVER {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0%,0%,0%,0.75);
+    z-index:1001;
+    display:none;
+}
+#cssMENU {
+    top:15%;
+    left:32%;
+    width:40%;
+    height:75%;
+    margin:0 auto;
+    position:fixed;
+    z-index:1002;
+    display:none;
+    border:1.5px solid #4e4e4e;
+    border-radius:16px;
+    background-color:rgba(0%,0%,0%,1);
+    color:white;
+    font-family:liberation serif;
+    font-size:14px;
+}
+#cssMENU:target,#cssMENU:target + #cssCOVER {
+    display:block;
+}
+.cssCANCEL {
+    display:block;
+    position:absolute;
+    top:3px;
+    right:2px;
+    color:#4e4e4e;
+    height:30px;
+    width:35px;
+    font-size:16px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+}
+.cssFRAME {
+    padding:25px;
+}
+.cssCONTENT {
+    display:none;
+    height:92%;
+    width:100%;
+    overflow:scroll;
+}
+.cssMENU_LABEL {
+    color: #2e2e2e;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.cssMENU_LABEL:hover {
+    text-decoration: underline;
+}
+.cssMENU_LABEL:visited {
+    color: #2e2e2e;
+}

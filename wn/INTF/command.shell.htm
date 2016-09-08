@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" hasBrowserHandlers="true">
+<head>
+<title>shell engine 1.0.0.0</title>
+<meta charset="utf-8">
+<link rel='stylesheet' media='all' href=intf.css>
+<script src=MD5.js></script>
+<script src=_stage_02.js></script>
+<script src=_stage_03.js></script>
+</head>
+<body onload='loader()'>
+<textarea class=cssCode id=srcCode placeholder='Enter keyword then press translate button below to translate'></textarea>
+<p/>
+<input id=btnTranslate type=button value='click to translate' onclick='translatorTool()'/>
+<select id=selBox>
+<option default>  Generate Story  </option>
+<option default>  Generate terrain  </option>
+</select>
+<input id=btnTranslate type=button value='clear source window' onclick='clear_window()'/>
+<input id=btnTranslate type=button value='Generate MD5' onclick='MD5()'/>
+<select id=historySelBox onclick='history_func(this.selectedIndex)'>
+<option default>  Overview  </option>
+</select>
+<span id=progress class=cssProgress style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<p/>
+<textarea class=cssTranslated id=srcTranslated placeholder='Author - Abdul H. Shabazz, Copyright (c) 2016 - All Rights Reserved'></textarea>
+<footer>
+<script></script>
+</footer>
+</body>

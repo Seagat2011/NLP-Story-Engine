@@ -10,7 +10,8 @@
         5. SUBJECT+VERB+DIRECT_OBJECT (eg [I] [painted] the [fence] white)
       Any BEAT, ACTION, SCENE, or SEQUENCE in a STORY is considered an EVENT
       A BEAT is a single irreducible EVENT 
-        The overall state of ENTROPY during A BEAT never remains unchanged 
+        The state of ENTROPY during A BEAT never remains unchanged
+        The state of ENTROPY between beats remains immutable 
       A CLAUSE is equal to 1 BEAT
       ACTIONS are composed of 1+ CLAUSES (ie SENTENCES)
       PARAGRAPHS are composed of 1+ SENTENCES
@@ -65,14 +66,14 @@
 Natural Language Processor interfaced to Wikipedia (JavaScript/JSON) and WordNet 3.0 (JavaScript/JSON) used to generate 1,000-4,000 page juggernaut novels, and 4,000+ page jarganaut.  
   
 ### Cantis Juggernaut
-A cantis juggernaut is a self-defined corpus or corpora that is composed >90% or entirely by a machine (includes directing, acting, film score, story concept, dialogue) with 0 human intervention.  
+A cantis juggernaut is a corpus or corpora that is composed >90% or entirely by a machine or team of machines (including directing, acting, film score, story concept, dialogue) with 0 human intervention.  
 
 -IMAX feature film 2.5-4 hours  
 -novel 1000-4000 pages  
 -symphony 2.5-4 hours  
  
 ### Cantis Jarganaut
-A cantis jarganaut is a comprehensive corpus or corpora considered impossible for any human or team of humans to accomplish without considerable effort:  
+A cantis jarganaut is a corpus or corpora that is composed >90% or entirely by a machine or team of machines (including directing, acting, film score, story concept, dialogue) with 0 human intervention, considered impossible for any human or team of humans to accomplish without considerable effort:  
 
 -IMAX feature film 4+ hours  
 -novel 4000+ pages  

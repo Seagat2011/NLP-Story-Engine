@@ -20,6 +20,7 @@
       SEQUENCES are composed of 1+ SCENES
         Each SEQUENCE undergoes a REVERSAL of emotion for the characters
         (met through word-connotation search, attribute-tagging)
+        Noun-generator algorithms provide the best sequences (eg cake baking algorithm, fruit cultivation algorithm )
       STORY is composed of 1+ SEQUENCES
       All are composed of 1+ sentences, and sentences are composed of VERB TENSORS
     
@@ -66,14 +67,14 @@
 Natural Language Processor interfaced to Wikipedia (JavaScript/JSON) and WordNet 3.0 (JavaScript/JSON) used to generate 1,000-4,000 page juggernaut novels, and 4,000+ page jarganaut.  
   
 ### Cantis Juggernaut
-A cantis juggernaut is a corpus or corpora that is composed >90% or entirely by a machine or team of machines (including directing, acting, film score, story concept, dialogue) with 0 human intervention.  
+A cantis juggernaut is a corpus or corpora that is composed >90% by a machine or team of machines (including directing, acting, film score, story concept, dialogue) with 0 human intervention.  
 
 -IMAX feature film 2.5-4 hours  
 -novel 1000-4000 pages  
 -symphony 2.5-4 hours  
  
-### Cantis Jarganaut
-A cantis jarganaut is a corpus or corpora that is composed >90% or entirely by a machine or team of machines (including directing, acting, film score, story concept, dialogue) with 0 human intervention, considered impossible for any human or team of humans to accomplish without considerable effort:  
+### Cantis Jarganaut ( Titan )  
+A cantis titan is a corpus or corpora that is composed >90% by a machine or team of machines (including directing, acting, film score, story concept, dialogue) with 0 human intervention, considered impossible for any human or team of humans to accomplish without considerable effort:  
 
 -IMAX feature film 4+ hours  
 -novel 4000+ pages  
